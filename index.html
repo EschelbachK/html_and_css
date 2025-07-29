@@ -3,146 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>Mein Interessen-Blog</title>
-  <style>
-    /* Grundlegendes Styling für die ganze Seite */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    /* Kopfbereich */
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    /* Einzelne Blogbeiträge */
-    article {
-      background-color: white;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 700px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #004080;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      background-color: #ccc; /* falls kein Bild geladen wird */
-    }
-
-    ul, ol {
-      margin-left: 20px;
-    }
-
-    blockquote {
-      font-style: italic;
-      color: #666;
-      margin: 15px 0;
-      padding-left: 15px;
-      border-left: 4px solid #ccc;
-    }
-
-    button {
-      background-color: #004080;
-      color: white;
-      border: none;
-      padding: 8px 12px;
-      margin: 5px 5px 0 0;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0066cc;
-    }
-
-    /* Fußbereich */
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-
-    footer a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
 
-<!-- Kopfbereich der Seite -->
+<!-- Kopfbereich der Seite, Titel oder Navigation -->
 <header>
+  <!-- Überschrift -->
   <h1>Willkommen auf meinem Interessen-Blog</h1>
 </header>
 
-<!-- Blogbeitrag 1 -->
+<!-- Blogbeitrag -->
 <article>
   <h2>Mein tollster Urlaub</h2>
   <p><strong>Autor:</strong> Kai Eschelbach</p>
-  <img src="https://via.placeholder.com/600x300" alt="Strandbild">
+
+  <!-- <img> für ein Bild, "src=" für den Bildpfad, Attribut "alt" Beschreibung,wenn das Bild nicht geladen wird -->
+  <img src="" alt="Strandbild">
+
+  <!-- Textabsatz -->
   <p>Der Strand in Kreta, war wunderschön. Das Wasser war klar und die Sonne schien den ganzen Tag.</p>
+
+  <!-- Klick Button -->
   <button>Gefällt mir</button>
   <button>Gefällt mir nicht</button>
 </article>
 
-<!-- Blogbeitrag 2 -->
 <article>
   <h2>Meine Lieblingsfilme</h2>
   <p><strong>Autor:</strong> Kai Eschelbach</p>
-  <img src="https://via.placeholder.com/600x300" alt="Filmrolle">
+  <img src="" alt="Filmrolle">
   <p>Hier sind ein paar Filme, die ich gut finde:</p>
+
+  <!-- Eine ungeordnete Liste, <li> für ein einzelnes Listenelement -->
   <ul>
     <li>Der Herr der Ringe</li>
     <li>Inception</li>
     <li>Interstellar</li>
     <li>Matrix</li>
   </ul>
+
   <button>Gefällt mir</button>
   <button>Gefällt mir nicht</button>
 </article>
 
-<!-- Blogbeitrag 3 -->
 <article>
-  <h2>Bücher, die ich gelesen habe</h2>
+  <h2>Bücher die ich gelesen habe </h2>
+  <!-- <strong> für fetten Text -->
   <p><strong>Autor:</strong> Kai Eschelbach</p>
-  <img src="https://via.placeholder.com/600x300" alt="Bücherregal">
+  <img src="" alt="Bücherregal">
   <p>Lesen fördert die Fantasie.</p>
   <p>Hier meine Top 3 Bücher:</p>
+
   <ol>
-    <li>J. R. R. Tolkien – Der Hobbit</li>
-    <li>David Baldacci – Im Auge des Todes</li>
-    <li>Scott Smith – Dickicht</li>
+    <li>J. R. R. Tolkien - Der Hobbit</li>
+    <li>David Baldacci - Im Auge des Todes</li>
+    <li>Scott Smith - Dickicht</li>
   </ol>
+
+  <!-- Für Lange Zitate <blockquote> und für kurze Zitate <q> -->
   <blockquote>
     „Ein Ring, sie zu knechten, sie alle zu finden,
     ins Dunkel zu treiben und ewig zu binden.“
   </blockquote>
+
+
   <button>Gefällt mir</button>
   <button>Gefällt mir nicht</button>
 </article>
 
-<!-- Fußbereich -->
+<!-- Fußbereich der Seite! Hier kann man rechtliche Links oder Kontaktinfos einfügen -->
 <footer>
+  <!-- Mit <a href="LINK">"Beschreibung"</a> kann man Links mit Beschreibung einfügen -->
   <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
 </footer>
 
