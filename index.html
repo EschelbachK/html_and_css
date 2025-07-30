@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
   <title>Mein Interessen-Blog</title>
 </head>
 <body>
@@ -13,28 +14,35 @@
 </header>
 
 <!-- Blogbeitrag -->
-<article>
+<article class="eintrag1">
   <h2>Mein tollster Urlaub</h2>
-  <p><strong>Autor:</strong> Kai Eschelbach</p>
 
-  <!-- <img> für ein Bild, "src=" für den Bildpfad, Attribut "alt" Beschreibung,wenn das Bild nicht geladen wird -->
-  <img src="" alt="Strandbild">
+  <!-- FLEXBOX: Meta-Daten in Container -->
+  <div class="meta">
+    <span><strong>Autor:</strong> Kai Eschelbach</span>
+    <!-- Hier könnte man noch Datum oder Tags ergänzen -->
+  </div>
 
-  <!-- Textabsatz -->
+  <img src="images/strand.jpg" alt="Strandbild">
+
   <p>Der Strand in Kreta, war wunderschön. Das Wasser war klar und die Sonne schien den ganzen Tag.</p>
 
-  <!-- Klick Button -->
   <button>Gefällt mir</button>
   <button>Gefällt mir nicht</button>
 </article>
 
-<article>
+<article class="eintrag2">
   <h2>Meine Lieblingsfilme</h2>
-  <p><strong>Autor:</strong> Kai Eschelbach</p>
-  <img src="" alt="Filmrolle">
+
+  <!-- FLEXBOX: Meta-Daten in Container -->
+  <div class="meta">
+    <span><strong>Autor:</strong> Kai Eschelbach</span>
+  </div>
+
+  <img src="images/Filme.jpg" alt="Filmrolle">
+
   <p>Hier sind ein paar Filme, die ich gut finde:</p>
 
-  <!-- Eine ungeordnete Liste, <li> für ein einzelnes Listenelement -->
   <ul>
     <li>Der Herr der Ringe</li>
     <li>Inception</li>
@@ -46,11 +54,16 @@
   <button>Gefällt mir nicht</button>
 </article>
 
-<article>
+<article class="eintrag3">
   <h2>Bücher die ich gelesen habe </h2>
-  <!-- <strong> für fetten Text -->
-  <p><strong>Autor:</strong> Kai Eschelbach</p>
-  <img src="" alt="Bücherregal">
+
+  <!-- FLEXBOX: Meta-Daten in Container -->
+  <div class="meta">
+    <span><strong>Autor:</strong> Kai Eschelbach</span>
+  </div>
+
+  <img src="images/Bücher.jpg" alt="Bücherregal">
+
   <p>Lesen fördert die Fantasie.</p>
   <p>Hier meine Top 3 Bücher:</p>
 
@@ -60,12 +73,10 @@
     <li>Scott Smith - Dickicht</li>
   </ol>
 
-  <!-- Für Lange Zitate <blockquote> und für kurze Zitate <q> -->
   <blockquote>
     „Ein Ring, sie zu knechten, sie alle zu finden,
     ins Dunkel zu treiben und ewig zu binden.“
   </blockquote>
-
 
   <button>Gefällt mir</button>
   <button>Gefällt mir nicht</button>
@@ -73,7 +84,6 @@
 
 <!-- Fußbereich der Seite! Hier kann man rechtliche Links oder Kontaktinfos einfügen -->
 <footer>
-  <!-- Mit <a href="LINK">"Beschreibung"</a> kann man Links mit Beschreibung einfügen -->
   <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
 </footer>
 
